@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">Hi</div>
+
+    <script>
+        // debugger; -- 이 줄부터 한줄씩 디버깅할 수 있음.
+        var div = document.querySelector('#app');
+        var str = 'Helloworld'
+        div.innerHTML = str;
+        str = 'hello vue!'
+        div.innerHTML = str;
+        
+        // $('#app') - jquery
+
+        //Reactvitiy on Depth.
+        var obj = {};
+        Object.defineProperty(obj, 'str', {
+            get: function(){
+                //obj.str 했을 때 돌아가는 코드 - 접근
+                console.log('Access');
+            },
+            set: function(newValue){
+                // obj.str = 10 했을 때 돌아가는 코드.
+                console.log('Set');
+                div.innerHTML = newValue;
+            }
+        });
+
+
+    </script>
+</body>
+</html>
