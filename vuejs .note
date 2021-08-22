@@ -12,3 +12,14 @@ babel.js  : 많은 브라우저에서 스크립트언어를 지원하기 위해 
 
 
 
+reactivity depth -> 꼭 염두하면서 개발하여야 한다. 그렇지 않으면 데이터가 변하더라도, 화면이 바뀌지 않는 경우가 발생할 수 있다. 
+
+Virtual DOM -- 페이지를 일부만 그리기 위해 버츄얼 돔을 쓴다 (React... 부터? ) 페이지 전체를 계속 다시그리게 하면, 브라우저의 과부하, 사용자 편의성을 저해할수 있기 때문에. 
+
+
+Vue.js 프론트엔드 학습법. 
+
+html/css/js -> DOM -> npm, vue.js.. -> npm, web pack -> ES6 -> Something else.
+
+
+MDN, Google developer web -> 여기서 많은 정보를 얻을 수 있습니다.
